@@ -1,0 +1,169 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="registro.css">
+    </head>
+<script type="text/javascript" language="javascript">
+
+function agregarOpciones(form)
+{
+var selec = form.agencia.options;
+var combo = form.modalidad.options;
+combo.length = null;
+
+    if (selec[0].selected == true)
+    {
+    var seleccionar = new Option("AGENCIA","","","");
+    combo[0] = seleccionar;
+    }
+
+    if (selec[1].selected == true)
+    {
+    var popular1 = new Option("FUTBOL","FUTBOL","","");
+    var popular2 = new Option("BALONCESTO","BALONCESTO","","");
+    var popular3 = new Option("MUSICA","MUSICA","","");
+    var popular4 = new Option("DANZA","DANZA","","");
+    combo[0] = popular1;
+    combo[1] = popular2;
+    combo[2] = popular3;
+    combo[3] = popular4;        
+    }
+
+    if (selec[2].selected == true)
+    {
+    var popular1 = new Option("FUTBOL","FUTBOL","","");
+    combo[0] = popular1;
+   
+    }
+    
+    if (selec[3].selected == true)
+    {
+    var popular1 = new Option("FUTBOL","FUTBOL","","");
+    combo[0] = popular1;
+   
+    }
+    if (selec[4].selected == true)
+    {
+    var popular1 = new Option("FUTBOL","FUTBOL","","");
+    var popular2 = new Option("BALONCESTO","BALONCESTO","","");
+    var popular3 = new Option("DANZA","DANZA","","");
+    combo[0] = popular1;
+    combo[1] = popular2;
+    combo[2] = popular3;
+    
+    }
+    if (selec[5].selected == true)
+    {
+    var popular1 = new Option("FUTBOL","FUTBOL","","");
+    combo[0] = popular1;
+   
+    }
+    if (selec[6].selected == true)
+    {
+    var popular1 = new Option("FUTBOL","FUTBOL","","");
+    combo[0] = popular1;
+   
+    }
+    if (selec[7].selected == true)
+    {
+    var popular1 = new Option("FUTBOL","FUTBOL","","");
+    combo[0] = popular1;
+   
+    }
+    if (selec[8].selected == true)
+    {
+    var popular1 = new Option("FUTBOL","FUTBOL","","");
+    combo[0] = popular1;
+   
+    }
+    if (selec[9].selected == true)
+    {
+    var popular1 = new Option("FUTBOL","FUTBOL","","");
+    combo[0] = popular1;
+   
+    }
+    if (selec[10].selected == true)
+    {
+    var popular1 = new Option("FUTBOL","FUTBOL","","");
+    combo[0] = popular1;
+   
+    }    
+}
+    </script>
+    
+<script type="text/javascript" language="javascript">
+
+function agregarOpciones1(form)
+{
+var selec = form.modalidad.options;
+var combo = form.categoria.options;
+combo.length = null;
+
+    if (selec[0].selected == true)
+    {
+    
+    var seleccionar = new Option("","","","");
+    combo[0] = seleccionar;
+    }
+
+
+
+    if (selec[2].selected == true)
+    {
+    
+    var popular1 = new Option("ESTIMULACION","ESTIMULACION","","");
+    var popular2 = new Option("GUITARRA","GUITARRA","","");
+    var popular3 = new Option("TECLADO","TECLADO","","");
+    combo[0] = popular1;
+    combo[1] = popular2;
+    combo[2] = popular3;
+    
+    } 
+}
+</script>
+</html>
+<form name="ejemplo2" method="POST" target="_blank" action="pagina.htm">
+
+<select name="agencia" onChange="agregarOpciones(this.form)">
+
+<option value="">[AGENCIA]</option>
+
+<option value="GARZON">GARZON</option>
+
+<option value="GUADALUPE">GUADALUPE</option>
+
+<option value="AGRADO">EL AGRADO</option>
+
+<option value="PITAL">EL PITAL</option>
+
+<option value="PITALITO">PITALITO</option>
+
+<option value="TARQUI">TARQUI</option>
+
+<option value="SUAZA">SUAZA</option>
+
+<option value="ARGENTINA">LA ARGENTINA</option>
+    
+<option value="RIVERA">RIVERA</option>
+    
+<option value="PLATA">LA PLATA</option>
+
+</select>
+
+ 
+
+<select name="modalidad" onChange="agregarOpciones1(this.form)">
+
+
+<option value=""> MODALIDAD </option>
+
+</select>
+    
+<select name="categoria"class="ocultar">
+
+<option value=""> CATEGORIA </option>
+
+</select>    
+
+ 
+
+<input type="submit" value="Enviar"></form>

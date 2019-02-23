@@ -1,0 +1,239 @@
+*
+{
+    box-sizing: border-box;
+}
+
+@font-face
+{
+    font-family: "Metropolis";
+    src: url("http://www.alphabetype.it/");
+}
+
+body
+{
+    margin:0;
+    font-family: "Metropolis", sans-serif;
+/*background: rgb(215,0,20);*/
+}
+
+h2
+{
+    color: #fff;
+    text-align: center;
+}
+
+.form-register
+{
+    
+    width: 98%;
+    max-width: 650px;
+    margin: auto;
+    background: #fff;
+    border-radius: 7px;
+    border: 1px solid rgb(215,0,20);
+    
+}
+
+th.tabla_cupos
+{
+    background: rgb(0,190,200);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid rgb(215,0,20);
+}
+
+.banner
+{
+    height: 100px;
+
+}
+
+.form-title, h2
+{
+    background: rgb(0,190,200);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid rgb(215,0,20);
+}
+
+#adjunto_ide:hover
+{
+    
+}
+
+.contenedor
+{
+    
+    padding: 8px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.total
+{
+    width: 100%;
+}
+
+.m_33
+{
+    width: 30%;
+    
+        
+}
+
+.mitad
+{
+    width: 48%;
+}
+
+.m_30
+{
+    width: 30%;
+}
+
+.m_70
+{
+    width: 65%;
+}
+
+
+.boton
+{
+    background: rgb(215,0,20);
+    color:white;
+    cursor: pointer;
+    margin:auto;
+    padding: 10px 40px;
+    font-size: 20px;
+}
+
+.boton:active
+{
+    transform: scale(1.05);
+}
+
+div.bienvenida
+{
+    width: 60%;
+    margin: auto;
+    padding: 5%;
+    border: 2px solid rgb(215,0,20);
+
+}
+
+
+
+p.bienvenida
+{
+    font-family: sans-serif fantasy;
+    font-size: 22px;
+    text-align: justify;
+    
+    
+}
+
+
+input, select
+{
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius:  3px;
+    border: 1px solid darkgray;
+}
+
+.img
+{
+    height: 100px;
+        margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+    
+    
+}
+table {
+   width: 60%;
+    margin: auto;
+   border: 1px solid #000;
+}
+th, td {
+   width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid #000;
+   border-collapse: collapse;
+   padding: 0.3em;
+   caption-side: bottom;
+}
+caption {
+   padding: 0.3em;
+   color: #fff;
+    background: #000;
+}
+th {
+   background: #eee;
+}
+
+.tit_tabla
+{
+    font:16px;
+    color:rgb(215,0,20);
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.ocultar
+{
+     /* display: none; */
+}
+
+.adjuntar
+{
+    width: 50%;
+}
+
+.tabla
+{
+    margin:auto;
+}
+
+.cafe
+{
+    color:rgb(120,0,1);
+}
+
+.dkkocultar
+{
+    display: none;
+}
+td.colang
+{
+    width: 10px;
+}
+
+th.modificar
+{
+    width: 100px;
+}
+
+.modificar
+{
+    width: 98%;
+    max-width: 650px;
+    margin: auto;
+    background: #fff;
+    border-radius: 7px;
+    border: 1px solid rgb(215,0,20);
+}

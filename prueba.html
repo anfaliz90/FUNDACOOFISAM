@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>Listas desplegables dependientes 2</title> 
+</head> 
+
+<p align="center"><b>Listas desplegables dependientes 2 
+<script LANGUAGE="JavaScript"> 
+
+
+<!-- Begin 
+var garzonArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')", 
+"('Danza')", 
+"('Baloncesto')", 
+"('Musica - Estimulacion')", 
+"('Musica - Teclado')",                             
+"('Musica - Guitarra')"); 
+var guadalupeArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')"); 
+var pitalArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')", 
+"('Baloncesto')", 
+"('Danza')"); 
+var agradoArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')");
+var tarquiArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')");
+var plataArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')", 
+"('Danza')"); 
+var pitalitoArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')");
+var suazaArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')");
+var argentinaArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')");
+var riveraArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')");
+
+    
+function populatemodalidad(inForm,selected) { 
+var selectedArray = eval(selected + "Array"); 
+while (selectedArray.length < inForm.modalidad.options.length) { 
+inForm.modalidad.options[(inForm.modalidad.options.length - 1)] = null; 
+} 
+for (var i=0; i < selectedArray.length; i++) { 
+eval("inForm.modalidad.options[i]=" + "new Option" + selectedArray[i]); 
+} 
+if (inForm.agencia.options[0].value == '') { 
+inForm.agencia.options[0]= null; 
+if ( navigator.appName == 'Netscape') { 
+if (parseInt(navigator.appVersion) < 4) { 
+window.history.go(0); 
+} 
+else { 
+if (navigator.platform == 'Win32' || navigator.platform == 'Win16') { 
+window.history.go(0); 
+} 
+} 
+} 
+} 
+} 
+
+</script> 
+</head> 
+
+<!-- STEP TWO: Add the last coding to the BODY of your HTML document --> 
+</b> 
+<body> 
+
+</p> 
+
+<center> 
+<form name="globe"> 
+<p> 
+<select name="agencia" onChange="populatemodalidad(document.globe,document. globe.agencia.options[document.globe.agencia.selectedIndex].value)"> 
+<option selected>Selecciona agencia</option> 
+                <option value="garzon"    >Garzón       </option>
+                <option value="guadalupe" >Guadalupe    </option>
+                <option value="pital"     >El Pital     </option>
+                <option value="agrado"    >Agrado       </option>
+                <option value="tarqui"    >Tarqui       </option>
+                <option value="plata"     >La Plata     </option>
+                <option value="pitalito"  >Pitalito     </option>
+                <option value="suaza"     >Suaza        </option>
+                <option value="argentina" >La Argentina </option>
+                <option value="rivera"    >Rivera       </option>
+</select> 
+<select name="modalidad" onChange="populateUSstate(document.globe,document. globe.modalidad.options[document.globe.modalidad.selectedIndex].text)"> 
+<option value>Modalidad</option> 
+</select> </p> 
+</form> 
+</center> 
+<p></p> 
+<center> 
+<p>&nbsp;</p> 
+</center> 
+<p></p> 
+
+</body> 
+
+</html> 

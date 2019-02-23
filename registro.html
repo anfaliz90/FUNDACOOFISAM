@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset  = "utf-8" >
+        <title>
+            Fundacoofisam - Registro 
+        </title>
+        <link rel="stylesheet" href="registro.css">
+<script language="JavaScript"> 
+
+
+<!-- Begin 
+var garzonArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')", 
+"('Danza')", 
+"('Baloncesto')", 
+"('Musica - Estimulacion')", 
+"('Musica - Teclado')",                             
+"('Musica - Guitarra')"); 
+var guadalupeArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')"); 
+var pitalArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')", 
+"('Baloncesto')", 
+"('Danza')"); 
+var agradoArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')");
+var tarquiArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')");
+var plataArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')", 
+"('Danza')"); 
+var pitalitoArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')");
+var suazaArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')");
+var argentinaArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')");
+var riveraArray = new Array("('Modalidad','',true,true)", 
+"('Futbol')");
+
+    
+function populatemodalidad(inForm,selected) { 
+var selectedArray = eval(selected + "Array"); 
+while (selectedArray.length < inForm.modalidad.options.length) { 
+inForm.modalidad.options[(inForm.modalidad.options.length - 1)] = null; 
+} 
+for (var i=0; i < selectedArray.length; i++) { 
+eval("inForm.modalidad.options[i]=" + "new Option" + selectedArray[i]); 
+} 
+if (inForm.agencia.options[0].value == '') { 
+inForm.agencia.options[0]= null; 
+if ( navigator.appName == 'Netscape') { 
+if (parseInt(navigator.appVersion) < 4) { 
+window.history.go(0); 
+} 
+else { 
+if (navigator.platform == 'Win32' || navigator.platform == 'Win16') { 
+window.history.go(0); 
+} 
+} 
+} 
+} 
+} 
+
+<!-- LISTA DINAMICA PARA EDADES - DEPENDE DE MUSICA
+var GARZONArray = new Array("('Modalidad','',true,true)", 
+"('FUTBOL')", 
+"('DANZA')", 
+"('BALONCESTO')", 
+"('MUSICA - ESTIMULACION')", 
+"('MUSICA - TECLADO')",                             
+"('MUSICA - GUITARRA')"); 
+var GUADALUPEArray = new Array("('Modalidad','',true,true)", 
+"('FUTBOL')"); 
+var PITALArray = new Array("('Modalidad','',true,true)", 
+"('FUTBOL')", 
+"('BALONCESTO')", 
+"('DANZA')"); 
+var AGRADOArray = new Array("('Modalidad','',true,true)", 
+"('FUTBOL')");
+var TARQUIArray = new Array("('Modalidad','',true,true)", 
+"('FUTBOL')");
+var PLATAArray = new Array("('Modalidad','',true,true)", 
+"('FUTBOL')", 
+"('DANZA')"); 
+var PITALITOArray = new Array("('Modalidad','',true,true)", 
+"('FUTBOL')");
+var SUAZAArray = new Array("('Modalidad','',true,true)", 
+"('FUTBOL')");
+var ARGENTINArray = new Array("('Modalidad','',true,true)", 
+"('FUTBOL')");
+var riveraArray = new Array("('Modalidad','',true,true)", 
+"('FUTBOL')");
+
+    
+function populatemodalidad(inForm,selected) { 
+var selectedArray = eval(selected + "Array"); 
+while (selectedArray.length < inForm.modalidad.options.length) { 
+inForm.modalidad.options[(inForm.modalidad.options.length - 1)] = null; 
+} 
+for (var i=0; i < selectedArray.length; i++) { 
+eval("inForm.modalidad.options[i]=" + "new Option" + selectedArray[i]); 
+} 
+if (inForm.agencia.options[0].value == '') { 
+inForm.agencia.options[0]= null; 
+if ( navigator.appName == 'Netscape') { 
+if (parseInt(navigator.appVersion) < 4) { 
+window.history.go(0); 
+} 
+else { 
+if (navigator.platform == 'Win32' || navigator.platform == 'Win16') { 
+window.history.go(0); 
+} 
+} 
+} 
+} 
+} 
+
+</script> 
+</script> 
+<script language="JavaScript">
+function CambiarFormulario(){
+	switch(document.forms[0].anio.selectedIndex){
+		case 0: 
+			document.forms[0].categoria.value="PREJUVENIL";
+			break;
+		case 1: 
+			document.forms[0].categoria.value="PREJUVENIL";
+			break;
+		case 2: 
+			document.forms[0].categoria.value="prejuvenil";
+            break;
+		case 3: 
+			document.forms[0].categoria.value="prejuvenil";
+            break;
+		case 4: 
+			document.forms[0].categoria.value="prejuvenil";
+            break;
+		case 5: 
+			document.forms[0].categoria.value="prejuvenil";
+            break;
+		case 6: 
+			document.forms[0].categoria.value="prejuvenil";
+            break;
+		case 7: 
+			document.forms[0].categoria.value="prejuvenil";
+            break;
+		case 8: 
+			document.forms[0].categoria.value="prejuvenil";
+            break;
+		case 9: 
+			document.forms[0].categoria.value="prejuvenil";
+            break;
+		case 10: 
+			document.forms[0].categoria.value="prejuvenil";
+            break;
+		case 11: 
+			document.forms[0].categoria.value="prejuvenil";
+            break;
+		case 12: 
+			document.forms[0].categoria.value="prejuvenil";
+            break;
+		case 13: 
+			document.forms[0].categoria.value="SAMI";
+            break;
+		case 14: 
+			document.forms[0].categoria.value="SAMI";
+            break;     
+		case 15: 
+			document.forms[0].categoria.value="PRESAMI";
+            break;
+		case 16: 
+			document.forms[0].categoria.value="PRESAMI";
+            break;            
+	}
+}
+
+</script>
+    </head>
+    <body>
+        
+         
+      <!--  <img src="img/logo.png" class="imagen"> -->
+        <div class="banner"></div>
+        <h1 class="form-title">Formulario de Inscripción</h1>
+        <form name="globe" action="registro.php" method="post" class="form-register" enctype="multipart/form-data" onLoad="CambiarFormulario();">
+            
+            
+            <h2>Datos Generales</h2>
+            
+            <div class="contenedor">
+             <label for="agencia">SELECCIONA AGENCIA</label>
+             <select name="agencia" onChange="populatemodalidad(document.globe,document. globe.agencia.options[document.globe.agencia.selectedIndex].value)" class="mitad" required > 
+            
+                <option value="GARZON"    >Garzón       </option>
+                <option value="GUADALUPE" >Guadalupe    </option>
+                <option value="PITAL"     >El Pital     </option>
+                <option value="AGRADO"    >Agrado       </option>
+                <option value="TARQUI"    >Tarqui       </option>
+                <option value="PLATA"     >La Plata     </option>
+                <option value="PITALITO"  >Pitalito     </option>
+                <option value="SUAZA"     >Suaza        </option>
+                <option value="ARGENTINA" >La Argentina </option>
+                <option value="RIVERA"    >Rivera       </option>
+            </select> 
+            <label for="modalidad">SELECCIONA MODALIDAD </label>
+            <select name="modalidad" onChange="populateUSstate(document.globe,document. globe.modalidad.options[document.globe.modalidad.selectedIndex].text)" class="mitad" required> 
+            <option value >MODALIDAD</option> 
+            </select>
+            </div>
+   
+            <h2> Datos del Menor Asociado </h2>
+            <div class="contenedor">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" class="mitad" required maxlength="30" minlength="5" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+            <input type="text" name="apellido" id="apellido" placeholder="Apellidos" class="mitad" required  maxlength="30" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+            
+             <select name="tipo_id" required  class="mitad" maxlength="30"> 
+            <option selected disable class="documento">TIPO DE DOCUMENTO</option> 
+                <option value="REGISTRO CIVIL"      >REGISTRO CIVIL      </option>
+                <option value="TARJETA DE IDENTIDAD">TARJETA DE IDENTIDAD</option>
+            </select>     
+
+            <input type="number" name="ide"  id="ide" placeholder="N° de identificación" class="mitad" maxlength="20" required>
+            
+                
+           
+           
+            <label for="adjunto_ide"> Adjuntar  Doc.  de  Identidad  &nbsp; &nbsp; &nbsp; &nbsp;  <input type="file"  id="btn_enviar" name="adjunto_ide" accept=".pdf"  required  class="adjuntar"></label>
+                
+            <br> <br>
+            <select class="m_30" name="sexo" id="sexo" required>
+                <option  selected disable> SEXO</option>    
+                <option>FEMENINO</option>
+                <option>MASCULINO</option>
+            </select>
+                
+                
+            <input type="text" name="IE" id="IE" placeholder="INSTITUCIÓN EDUCATIVA" class="m_70" required maxlength="30" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+            <input type="text" name="EPS" id="EPS" placeholder="E.P.S." class="m_70" required maxlength="30" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+                
+           <label for="adjunto_eps"> Adjuntar Certificación de E.P.S.   <input type="file"  id="btn_enviar" name="adjunto_eps" accept=".pdf"  required  ></label>
+                
+                
+                
+            <label> FECHA DE NACIMIENTO  (MM/DD/AAAA)              
+              <!--  <input type="date" name="fecha_nac" required> -->
+            
+            <label for="mes"></label>
+            <select name="mes">Mes		
+            <option>	1	</option>
+            <option>	2	</option>
+            <option>	3	</option>
+            <option>	4	</option>
+            <option>	5	</option>
+            <option>	6	</option>
+            <option>	7	</option>
+            <option>	8	</option>
+            <option>	9	</option>
+            <option>	10	</option>
+            <option>	11	</option>
+            <option>	12	</option>
+              </select > 
+            <select name="dia"> Día 
+            <option>	1	</option>
+            <option>	2	</option>
+            <option>	3	</option>
+            <option>	4	</option>
+            <option>	5	</option>
+            <option>	6	</option>
+            <option>	7	</option>
+            <option>	8	</option>
+            <option>	9	</option>
+            <option>	10	</option>
+            <option>	11	</option>
+            <option>	12	</option>
+            <option>	13	</option>
+            <option>	14	</option>
+            <option>	15	</option>
+            <option>	16	</option>
+            <option>	17	</option>
+            <option>	18	</option>
+            <option>	19	</option>
+            <option>	20	</option>
+            <option>	21	</option>
+            <option>	22	</option>
+            <option>	23	</option>
+            <option>	24	</option>
+            <option>	25	</option>
+            <option>	26	</option>
+            <option>	27	</option>
+            <option>	28	</option>
+            <option>	29	</option>
+            <option>	30	</option>
+            <option>	31	</option>
+            </select>
+                <select name="anio" onChange="CambiarFormulario()">
+            <option id="2000" name="2000">	2000	</option>
+            <option id="2001" name="2001">	2001	</option>
+            <option id="2002" name="2002">	2002	</option>
+            <option id="2003" name="2003">	2003	</option>
+            <option id="2004" name="2004">	2004	</option>
+            <option id="2005" name="2005">	2005	</option>
+            <option id="2006" name="2006">	2006	</option>
+            <option id="2007" name="2007">	2007	</option>
+            <option id="2008" name="2008">	2008	</option>
+            <option id="2009" name="2009">	2009	</option>
+            <option id="2010" name="2010">	2010	</option>
+            <option id="2011" name="2011">	2011	</option>
+            <option id="2012" name="2012">	2012	</option>
+            <option id="2013" name="2013">	2013	</option>
+            <option id="2014" name="2014">	2014	</option>
+            <option id="2015" name="2015">	2015	</option>
+
+            </select>
+            </label>
+            <br>
+                <div>
+                <label for="categoria">CATEGORÍA *Asignada por fecha de nacimiento</label>
+                <input type="text" readonly="readonly" selected  name="categoria" id="categoria">
+                </div>
+            </div>
+            
+            <h2> Datos del Representante Legal</h2>
+            <div class="contenedor">
+                <input type="text" name="nombre_rep" id="nombre_rep" placeholder="Nombre completo" class="mitad" required maxlength="30" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+                <input type="text" name="apellido_rep" id="apellido_rep" placeholder="Apellidos" class="mitad" required maxlength="30" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+                
+            <select class="mitad" name="parentesco" id="parentesco" required >
+                <option  selected disable> PARENTESCO </option>    
+                <option>PADRE</option>
+                <option>MADRE</option>
+            </select>
+                
+                <input type="number" name="id_rep" id="id_rep" placeholder="N° identificación" class="mitad" required maxlength="20">
+                <input type="number" name="tel"  id="tel" placeholder="Teléfono - Celular" class="mitad" required maxlength="15">
+                <input type="text" name="direccion" id="direccion" placeholder="Dirección" class="mitad" maxlength="30" required style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+                <input type="text" name="municipio" id="municipio" placeholder="Municipio" class="mitad" required maxlength="30" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+                <input type="text" name="email" id="email" placeholder="Correo electrónico" class="m_70" required maxlength="40" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+            
+                <p class="total"> Leer Autorización para Explotación de Derechos de Imagen <a href="pdf/AUTORIZACION_PARA_EXPLOTACION_DE_DERECHOS_DE_IMAGEN.pdf">aquí</a>.</p>
+                <br>
+                
+                    <p><input type="checkbox" required> Declaro que la información referenciada en el presente Formulario de Inscripción corresponde a la realidad.</p>
+                
+                <p>
+                    <input type="checkbox" required> Acepto Autorización para Explotación de Derechos de Imagen.</p>
+            </div>
+            
+          
+          
+            
+            <div class="contenedor">
+               
+            <input type="submit" value="Registrar" class="boton"/>
+<!--<p>Si ya estás registrado, pulsa <a href=buscar.html>aquí</a> para descargar la factura </p> -->
+            </div>
+        </form>
+    </body>
+</html>
+

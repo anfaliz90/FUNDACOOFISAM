@@ -1,0 +1,97 @@
+<html>
+
+<script type="text/javascript" language="javascript">
+
+function agregarOpciones(form)
+{
+var selec = form.tipos.options;
+var combo = form.estilo.options;
+combo.length = null;
+
+    if (selec[0].selected == true)
+    {
+    var seleccionar = new Option("<-- esperando selección","","","");
+    combo[0] = seleccionar;
+    }
+
+    if (selec[1].selected == true)
+    {
+    var popular1 = new Option("Rock de los 90","Rock1","","");
+    var popular2 = new Option("Rock de los 80","Rock2","","");
+    combo[0] = popular1;
+    combo[1] = popular2;
+    }
+
+    if (selec[2].selected == true)
+    {
+    var academica1 = new Option("Musica del Barroco","Barroco","","");
+    var academica2 = new Option("Musica del Siglo XX","Siglo XX","","");
+    var academica3 = new Option("Música del Romantisismo","Romantico","","");
+    combo[0] = academica1;
+    combo[1] = academica2;
+    combo[2] = academica3;
+    }
+}
+</script>
+    <script type="text/javascript" language="javascript">
+
+function agregarOpciones1(form)
+{
+var selec = form.estlo.options;
+var combo = form.estilo2.options;
+combo.length = null;
+
+    if (selec[0].selected == true)
+    {
+    var seleccionar = new Option("<-- esperando selección","","","");
+    combo[0] = seleccionar;
+    }
+
+    if (selec[1].selected == true)
+    {
+    var popular1 = new Option("Rock de los 90","Rock1","","");
+    var popular2 = new Option("Rock de los 80","Rock2","","");
+    combo[0] = popular1;
+    combo[1] = popular2;
+    }
+
+    if (selec[2].selected == true)
+    {
+    var academica1 = new Option("Musica del Barroco","Barroco","","");
+    var academica2 = new Option("Musica del Siglo XX","Siglo XX","","");
+    var academica3 = new Option("Música del Romantisismo","Romantico","","");
+    combo[0] = academica1;
+    combo[1] = academica2;
+    combo[2] = academica3;
+    }
+}
+</script>
+</html>
+<form name="ejemplo2" method="POST" target="_blank" action="pagina.htm">
+
+<select name="tipos" onChange="agregarOpciones(this.form)">    
+    
+<option value="">[seleccione una opcin]</option>
+
+<option value="musicapopular">Música Popular (Rock)</option>
+
+<option value="musicaacademica">Música Acadmica</option>
+
+</select>
+
+<select name="estilo" onChange="agregarOpciones(this.form)">
+
+<option value=""> <-- esperando seleccin </option>
+
+</select>
+ 
+
+<select name="estilo2">
+
+<option value=""> <-- esperando seleccin </option>
+
+</select>
+
+ 
+
+<input type="submit" value="Enviar"></form>
